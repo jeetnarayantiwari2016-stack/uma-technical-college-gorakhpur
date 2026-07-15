@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>उमा टेक्निकल डिग्री कॉलेज | गोरखपुर — 100% प्रैक्टिकल ट्रेनिंग</title>
+<meta name="description" content="उमा टेक्निकल डिग्री कॉलेज, रुस्तमपुर चौराहा गोरखपुर — 2026 की लेटेस्ट AI-सपोर्टेड कंप्यूटर स्किल्स, स्मार्ट AC/फ्रिज रिपेयरिंग और इलेक्ट्रॉनिक्स कोर्स 100% जॉब प्लेसमेंट के साथ।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F172A;
+    --ink-soft:#475569;
+    --paper:#F8FAFC;
+    --paper-dim:#F1F5F9;
+    --gold:#F59E0B;
+    --gold-deep:#D97706;
+    --green:#10B981;
+    --green-deep:#047857;
+    --rust:#EF4444;
+    --line:#E2E8F0;
+    --white:#FFFFFF;
+    --brand:#2563EB;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Hind', sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Baloo 2', sans-serif;
+    color:var(--ink);
+    line-height:1.2;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+  ::selection{background:var(--gold); color:var(--ink);}
+  :focus-visible{outline:3px solid var(--brand); outline-offset:3px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  /* ---------- Top strip ---------- */
+  .topstrip{
+    background:var(--ink);
+    color:var(--paper-dim);
+    font-size:0.85rem;
+    padding:8px 0;
+    font-weight: 500;
+  }
+  .topstrip .wrap{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+  .topstrip a{color:var(--gold); font-weight:700;}
+
+  /* ---------- Header ---------- */
+  header.site{
+    background:rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--line);
+    position:sticky; top:0; z-index:50;
+  }
+  .navrow{display:flex; align-items:center; justify-content:space-between; padding:12px 0;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand .mark{
+    width:48px; height:48px; border-radius:12px;
+    background:linear-gradient(135deg, var(--brand), var(--green-deep));
+    display:flex; align-items:center; justify-content:center;
+    color:var(--white); font-family:'Baloo 2'; font-weight:800; font-size:1.4rem;
+    flex:none;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  }
+  .brand .name{font-family:'Baloo 2'; font-weight:800; font-size:1.4rem; color:var(--ink); letter-spacing: -0.02em;}
+  .brand .name small{display:block; font-family:'Hind'; font-weight:700; font-size:0.75rem; color:var(--brand); letter-spacing:0.05em;}
+  nav.links{display:flex; gap:26px; font-weight:600; font-size:0.95rem;}
+  nav.links a{padding:6px 2px; border-bottom:2px solid transparent; transition: color 0.2s;}
+  nav.links a:hover{color: var(--brand);}
+  .cta-call{
+    background:var(--brand); color:var(--white); font-weight:700;
+    padding:10px 20px; border-radius:8px; font-size:0.95rem;
+    box-shadow:0 4px 14px rgba(37, 99, 235, 0.3);
+    transition: all 0.2s;
+  }
+  .cta-call:hover{transform: translateY(-1px); background: #1d4ed8;}
+  .navtoggle{display:none;}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    padding:64px 0 80px;
+    background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(37,99,235,0.12), transparent 70%),
+      linear-gradient(180deg, var(--white) 0%, var(--paper-dim) 100%);
+    overflow:hidden;
+    border-bottom:1px solid var(--line);
+  }
+  .hero .wrap{display:grid; grid-template-columns:1.2fr 0.8fr; gap:48px; align-items:center;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    background:#EFF6FF; border:1px solid #BFDBF7;
+    padding:6px 16px; border-radius:999px; font-size:0.85rem; font-weight:700;
+    color:var(--brand); margin-bottom:20px;
+  }
+  .eyebrow::before{content:"●"; color:var(--rust); font-size:0.7rem; animation: pulse 1.5s infinite;}
+  @keyframes pulse { 0% { opacity: 0.3; } 50% { opacity: 1; } 100% { opacity: 0.3; } }
+  .hero h1{font-size:3rem; font-weight:800; margin-bottom:18px; letter-spacing: -0.01em;}
+  .hero h1 .accent{color:var(--brand); background: linear-gradient(to right, #2563EB, #10B981); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+  .hero p.lead{font-size:1.15rem; color:var(--ink-soft); max-width:54ch; margin-bottom:32px; font-weight: 500;}
+  .hero-ctas{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:32px;}
+  .btn{
+    display:inline-block; font-weight:700; padding:14px 28px; border-radius:8px;
+    font-size:1rem; transition:all .2s ease; text-align: center;
+  }
+  .btn:hover{transform:translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15);}
+  .btn-primary{background:var(--green); color:var(--white); box-shadow:0 4px 14px rgba(16, 185, 129, 0.3); animation: shake 4s infinite;}
+  .btn-ghost{background:var(--white); color:var(--ink); border:1px solid var(--line); }
+  @keyframes shake { 0%, 100% { transform: translateX(0); } 10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); } 20%, 40%, 60%, 80% { transform: translateX(2px); } }
+  
+  .trustrow{display:flex; gap:24px; flex-wrap:wrap; font-size:0.9rem; color:var(--ink-soft); font-weight:700;}
+  .trustrow span{display:flex; align-items:center; gap:8px;}
+  .dot{width:8px; height:8px; border-radius:50%; background:var(--green); flex:none;}
+
+  /* Seal / signature element */
+  .seal-stage{display:flex; justify-content:center; align-items:center; position:relative;}
+  .seal{
+    width:240px; height:240px; border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #2563EB, #1E40AF 70%);
+    display:flex; align-items:center; justify-content:center;
+    position:relative;
+    box-shadow:0 20px 40px -10px rgba(37,99,235,0.4), inset 0 0 0 6px rgba(255,255,255,0.1);
+  }
+  .seal::before{
+    content:"";
+    position:absolute; inset:14px;
+    border-radius:50%;
+    border:2px dashed rgba(255,255,255,0.4);
+    animation:spin 25s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .seal .core{
+    text-align:center; color:var(--white); font-family:'Baloo 2';
+  }
+  .seal .core .big{font-size:2.4rem; font-weight:800; line-height:1;}
+  .seal .core .mid{font-size:1.15rem; font-weight:700; margin-top:2px; letter-spacing: 1px;}
+  .seal .core .small{font-size:0.75rem; letter-spacing:0.12em; margin-top:6px; opacity:0.9; font-family:'Hind'; font-weight:700;}
+  .seal-badge{
+    position:absolute; bottom:-12px; left:50%; transform:translateX(-50%);
+    background:var(--rust); color:var(--white); font-weight:700; font-size:0.85rem;
+    padding:6px 18px; border-radius:999px; white-space:nowrap;
+    box-shadow:0 4px 12px rgba(239, 68, 68, 0.3);
+  }
+
+  /* ---------- Section shells ---------- */
+  section{padding:72px 0;}
+  .section-head{max-width:65ch; margin-bottom:44px;}
+  .section-head .kicker{color:var(--brand); font-weight:700; font-size:0.9rem; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px; display:block;}
+  .section-head h2{font-size:2.2rem; font-weight:800; letter-spacing: -0.01em;}
+  .section-head p{color:var(--ink-soft); margin-top:10px; font-size:1.05rem; font-weight: 500;}
+
+  /* ---------- Courses ---------- */
+  .course-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px;}
+  .course-card{
+    background:var(--white); border:1px solid var(--line); border-radius:16px;
+    padding:26px 24px; position:relative; overflow:hidden;
+    transition: all 0.2s;
+  }
+  .course-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+    border-color: var(--brand);
+  }
+  .course-card::before{
+    content:""; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--brand);
+  }
+  .course-card h3{font-size:1.2rem; font-weight:700; margin-bottom:8px;}
+  .course-card p{font-size:0.95rem; color:var(--ink-soft);}
+  .course-card .tag{
+    display:inline-block; margin-top:14px; font-size:0.78rem; font-weight:700;
+    color:var(--brand); background:#EFF6FF; padding:4px 12px; border-radius:999px;
+  }
+
+  /* ---------- Offers (Urgency Style) ---------- */
+  .offers{background:linear-gradient(135deg, #0F172A, #1E293B); color:var(--paper-dim);}
+  .offers .section-head h2, .offers .section-head .kicker{color:var(--white);}
+  .offers .section-head p{color:#94A3B8;}
+  .offer-grid{display:grid; grid-template-columns:1fr 1fr; gap:24px;}
+  .offer-ticket{
+    background:rgba(255, 255, 255, 0.03);
+    border:2px dashed rgba(245, 158, 11, 0.4);
+    border-radius:16px; padding:32px;
+    position:relative;
+  }
+  .offer-ticket .free{
+    display:inline-block; background:var(--gold); color:var(--ink);
+    font-weight:800; font-size:0.75rem; letter-spacing:0.05em;
+    padding:4px 12px; border-radius:6px; margin-bottom:14px;
+    text-transform: uppercase;
+  }
+  .offer-ticket h3{color:var(--white); font-size:1.35rem; font-weight:700; margin-bottom:10px;}
+  .offer-ticket p{color:#94A3B8; font-size:0.98rem; line-height: 1.6;}
+  .offer-note{text-align: center; margin-top:32px; font-weight: 700; color: var(--gold); font-size: 1.1rem;}
+
+  /* ---------- About / certification badges ---------- */
+  .about-grid{display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center;}
+  .badge-list{display:flex; flex-direction:column; gap:18px;}
+  .badge-item{display:flex; gap:16px; align-items:flex-start; background:var(--white); border:1px solid var(--line); border-radius:14px; padding:20px;}
+  .badge-item .ic{
+    width:44px; height:44px; border-radius:50%; background:#EFF6FF;
+    display:flex; align-items:center; justify-content:center; flex:none; font-weight:800; color:var(--brand); font-family:'Baloo 2';
+  }
+  .badge-item h3{font-size:1.1rem; font-weight:700; margin-bottom:4px;}
+  .badge-item p{font-size:0.92rem; color:var(--ink-soft);}
+  .stat-strip{display:flex; gap:36px; margin-top:32px; flex-wrap:wrap;}
+  .stat .num{font-family:'Baloo 2'; font-size:2.2rem; font-weight:800; color:var(--brand); line-height: 1;}
+  .stat .lbl{font-size:0.88rem; color:var(--ink-soft); font-weight:700; margin-top:4px;}
+
+  /* ---------- Gallery ---------- */
+  .gallery{background:var(--white);}
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:16px;
+  }
+  .gallery-item{
+    position:relative;
+    border-radius:14px;
+    overflow:hidden;
+    aspect-ratio:4/3;
+    border:1px solid var(--line);
+    cursor:pointer;
+    background:var(--paper-dim);
+  }
+  .gallery-item img{
+    width:100%; height:100%; object-fit:cover;
+    transition: transform .35s ease;
+    display:block;
+  }
+  .gallery-item:hover img{transform:scale(1.07);}
+  .gallery-item .cap{
+    position:absolute; left:0; right:0; bottom:0;
+    background:linear-gradient(180deg, transparent, rgba(15,23,42,0.75));
+    color:var(--white); font-size:0.78rem; font-weight:700;
+    padding:18px 10px 8px;
+    opacity:0; transition:opacity .25s ease;
+  }
+  .gallery-item:hover .cap{opacity:1;}
+
+  /* Lightbox */
+  .lightbox{
+    display:none; position:fixed; inset:0; z-index:200;
+    background:rgba(15,23,42,0.92);
+    align-items:center; justify-content:center;
+    padding:24px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{
+    max-width:92vw; max-height:86vh; border-radius:10px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+  }
+  .lightbox-close{
+    position:absolute; top:20px; right:28px;
+    color:var(--white); font-size:2rem; font-weight:700;
+    cursor:pointer; line-height:1;
+  }
+  .lightbox-nav{
+    position:absolute; top:50%; transform:translateY(-50%);
+    color:var(--white); font-size:2.4rem; cursor:pointer;
+    user-select:none; padding:10px 18px;
+  }
+  .lightbox-prev{left:8px;}
+  .lightbox-next{right:8px;}
+
+  /* ---------- Location ---------- */
+  .location{background:var(--paper-dim);}
+  .loc-grid{display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:stretch;}
+  .loc-card{background:var(--white); border:1px solid var(--line); border-radius:16px; padding:32px; display:flex; flex-direction:column; gap:20px;}
+  .loc-card h3{font-size:1.2rem; font-weight:700;}
+  .loc-line{display:flex; gap:14px; align-items:flex-start; font-size:1rem;}
+  .loc-line .ic{color:var(--brand); font-weight:800; flex:none; font-size: 1.2rem;}
+  .map-frame{
+    border-radius:16px; overflow:hidden; border:1px solid var(--line); min-height:340px;
+    box-shadow:0 12px 28px -12px rgba(15,23,42,0.15);
+  }
+  .map-frame iframe{width:100%; height:100%; min-height:340px; border:0;}
+  .directions{
+    margin-top:8px; display:inline-block; font-weight:700; color:var(--brand);
+    font-size: 1rem; transition: color 0.2s;
+  }
+  .directions:hover{color: #1d4ed8;}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink); color:#94A3B8; padding:56px 0 32px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 0.8fr 0.8fr; gap:40px; padding-bottom:36px; border-bottom:1px solid #334155;}
+  footer h4{color:var(--white); font-family:'Baloo 2'; font-size:1.1rem; margin-bottom:16px;}
+  footer .fbrand{display:flex; align-items:center; gap:10px; margin-bottom:12px;}
+  footer .fbrand .mark{width:36px; height:36px; border-radius:8px; background:linear-gradient(135deg, var(--brand), var(--green)); flex:none;}
+  footer .fbrand span{font-family:'Baloo 2'; font-weight:800; color:var(--white); font-size:1.2rem;}
+  footer ul{list-style:none;}
+  footer ul li{margin-bottom:10px; font-size:0.95rem;}
+  footer ul li a:hover{color:var(--white);}
+  .foot-bottom{padding-top:24px; font-size:0.88rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+
+  /* Sticky mobile call bar */
+  .sticky-call{display:none;}
+
+  @media (max-width: 880px){
+    nav.links{display:none;}
+    .hero .wrap{grid-template-columns:1fr; text-align:center;}
+    .hero p.lead{margin-left:auto; margin-right:auto;}
+    .hero-ctas{justify-content:center;}
+    .trustrow{justify-content:center;}
+    .course-grid{grid-template-columns:repeat(2,1fr);}
+    .offer-grid{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr; gap: 32px;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+    .loc-grid{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr; gap:28px;}
+    .sticky-call{
+      display:flex; position:fixed; bottom:0; left:0; right:0; z-index:60;
+      background:rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border-top: 1px solid var(--line);
+      justify-content:space-between; align-items:center;
+      padding:12px 20px; box-shadow:0 -4px 20px rgba(0,0,0,0.1);
+    }
+    .sticky-btn {
+      flex: 1; text-align: center; padding: 12px; border-radius: 8px; font-weight: 700; font-size: 0.95rem;
+    }
+    .sticky-btn.call-b { background: var(--green); color: white; margin-left: 8px; box-shadow: 0 4px 12px rgba(16,185,129,0.2); }
+    .sticky-btn.wp-b { background: #25D366; color: white; margin-right: 8px; }
+    body{padding-bottom:68px;}
+  }
+  @media (max-width:560px){
+    .hero h1{font-size:2.2rem;}
+    .course-grid{grid-template-columns:1fr;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+    .seal{width:200px; height:200px;}
+    .section-head h2{font-size: 1.75rem;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topstrip">
+  <div class="wrap">
+    <span>🎯 सत्र 2026 एडमिशन ओपन: भारत सरकार द्वारा मान्यता प्राप्त ISO 9001:2015 संस्थान</span>
+    <a href="tel:+916306290994">📞 डायरेक्ट एडमिशन हेल्पलाइन: +91-6306290994</a>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap navrow">
+    <div class="brand">
+      <div class="mark">उ</div>
+      <div class="name">उमा टेक्निकल कॉलेज
+        <small>NIELIT APPROVED · GORAKHPUR</small>
+      </div>
+    </div>
+    <nav class="links">
+      <a href="#courses">कोर्स लिस्ट</a>
+      <a href="#offers">स्पेशल ऑफर</a>
+      <a href="#about">प्रमाण पत्र</a>
+      <a href="#gallery">गैलरी</a>
+      <a href="#location">लोकेशन</a>
+    </nav>
+    <a class="cta-call" href="tel:+916306290994">📞 अभी बात करें</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">🔥 ऑफर सिर्फ इस हफ्ते के एडमिशन पर: ₹2000 की सीधी छूट!</span>
+      <h1>गोरखपुर की नंबर-1 <span class="accent">NIELIT स्वीकृत</span> प्रैक्टिकल ट्रेनिंग इंस्टिट्यूट</h1>
+      <p class="lead">अब सिर्फ थ्योरी नहीं, 100% लैब प्रैक्टिकल! कंप्यूटर कोर्सेज (CCC, ADCA) से लेकर स्मार्ट AC-फ्रिज, इनवर्टर, LED TV रिपेयरिंग और एडवांस इलेक्ट्रॉनिक्स तक — वह सीखें जिससे तुरंत नौकरी या अपना बिजनेस शुरू हो।</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="tel:+916306290994">सीट बुक करने के लिए कॉल करें</a>
+        <a class="btn btn-ghost" href="https://wa.me/916306290994?text=Hi,%20I%20want%20to%20know%20about%20courses" target="_blank">💬 WhatsApp पर सिलेबस मंगाएं</a>
+      </div>
+      <div class="trustrow">
+        <span><i class="dot"></i> 100% जॉब प्लेसमेंट सहायता</span>
+        <span><i class="dot"></i> लाइफटाइम प्रैक्टिकल लैब सपोर्ट</span>
+        <span><i class="dot"></i> बाहर के छात्रों के लिए हॉस्टल की सुविधा</span>
+      </div>
+    </div>
+    <div class="seal-stage">
+      <div class="seal">
+        <div class="core">
+          <div class="big">100%</div>
+          <div class="mid">प्रैक्टिकल</div>
+          <div class="small">JOB GUARANTEE</div>
+        </div>
+        <div class="seal-badge">⏳ सीमित सीटें शेष</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">करियर ओरिएंटेड कोर्सेज</span>
+      <h2>वही सीखें जो मार्केट की डिमांड है</h2>
+      <p>हमारे सभी कोर्सेज 2026 के लेटेस्ट टूल्स और नई टेक्नोलॉजी (Inverter Tech & Smart Controls) के आधार पर डिजाइन किए गए हैं।</p>
+    </div>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>C.C.C / C.C.A</h3>
+        <p>सरकारी नौकरियों के लिए अनिवार्य सर्टिफिकेट। कंप्यूटर बेसिक, MS ऑफिस और इंटरनेट का पूरा ज्ञान।</p>
+        <span class="tag">सरकारी मान्य</span>
+      </div>
+      <div class="course-card">
+        <h3>A.D.C.A / D.C.A</h3>
+        <p>1 साल का कंपलीट डिप्लोमा। ऑफिस वर्क, एडवांस एक्सेल, ग्राफिक डिजाइनिंग और कोडिंग की शुरुआत।</p>
+        <span class="tag">मोस्ट पॉपुलर</span>
+      </div>
+      <div class="course-card">
+        <h3>Tally Prime (with GST)</h3>
+        <p>लेटेस्ट एकाउंटिंग सॉफ्टवेयर पर लाइव बिलिंग, GST रिटर्न और कॉर्पोरेट अकाउंटिंग सीखें।</p>
+        <span class="tag">अकाउंटिंग जॉब्स</span>
+      </div>
+      <div class="course-card">
+        <h3>स्मार्ट ए.सी. रिपेयरिंग</h3>
+        <p>इन्वर्टर AC, स्प्लिट AC की गैस चार्जिंग, फॉल्ट फाइंडिंग और कंपलीट कंप्रेसर रिपेयरिंग।</p>
+        <span class="tag">हाई डिमांड</span>
+      </div>
+      <div class="course-card">
+        <h3>एडवांस फ्रिज रिपेयरिंग</h3>
+        <p>सिंगल-डबल डोर और डिजिटल डिस्प्ले वाले मॉडर्न रेफ्रिजरेटर की फॉल्ट डायग्नोसिस।</p>
+        <span class="tag">टेक्निकल स्किल्स</span>
+      </div>
+      <div class="course-card">
+        <h3>वाशिंग मशीन रिपेयरिंग</h3>
+        <p>सेमी और फुली ऑटोमैटिक (फ्रंट व टॉप लोड) वाशिंग मशीन की पीसीबी और मोटर वायरिंग।</p>
+        <span class="tag">शॉर्ट-टर्म कोर्स</span>
+      </div>
+      <div class="course-card">
+        <h3>स्मार्टफोन व हार्डवेयर</h3>
+        <p>कंप्यूटर असेंबलिंग, लैपटॉप ट्रबलशूटिंग और चिप-लेवल मेंटेनेंस की पूरी जानकारी।</p>
+        <span class="tag">बिजनेस स्कोप</span>
+      </div>
+      <div class="course-card">
+        <h3>LED / Smart TV रिपेयरिंग</h3>
+        <p>4K/Android टीवी की सर्किट बोर्ड (PCB) रिपेयरिंग, बैकलाइट बदलना और सॉफ्टवेयर फ्लैशिंग।</p>
+        <span class="tag">इलेक्ट्रॉनिक्स</span>
+      </div>
+      <div class="course-card">
+        <h3>नेटवर्किंग व वाई-फाई</h3>
+        <p>CCTV कैमरा सेटअप, वाई-फाई कॉन्फ़िगरेशन, LAN/WAN और राउटर मैनेजमेंट।</p>
+        <span class="tag">IT फील्ड</span>
+      </div>
+      <div class="course-card">
+        <h3>स्मार्ट इलेक्ट्रिकल</h3>
+        <p>घरेलू/इंडस्ट्रियल इनवर्टर वायरिंग, हाउस वायरिंग और डिजिटल मीटर फॉल्ट।</p>
+        <span class="tag">स्वरोजगार</span>
+      </div>
+      <div class="course-card">
+        <h3>एडवांस इलेक्ट्रॉनिक्स</h3>
+        <p>एसएमडी (SMD) कंपोनेंट्स, सोल्डरिंग-डीसोल्डरिंग और मदरबोर्ड टेस्टिंग टूल्स का उपयोग।</p>
+        <span class="tag">कोर टेक्निकल</span>
+      </div>
+      <div class="course-card">
+        <h3>D.T.P. (डिज़ाइनिंग)</h3>
+        <p>फोटोशॉप, कोरलड्रॉ और पेजमेकर पर प्रोफेशनल बैनर, लोगो और प्रिंटिंग वर्क सीखें।</p>
+        <span class="tag">फ्रीलांसिंग</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offers" class="offers">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">धमाका कॉम्बो ऑफर 2026</span>
+      <h2>एक बार फीस, डबल फायदा!</h2>
+      <p>छात्रों को आत्मनिर्भर बनाने के लिए उमा टेक्निकल कॉलेज की विशेष पहल।</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-ticket">
+        <span class="free">FREE COMBO</span>
+        <h3>AC / फ्रिज कोर्स के साथ Tally Prime बिल्कुल फ्री</h3>
+        <p>तकनीकी काम सीखने के साथ-साथ दुकान या बिजनेस का अकाउंट संभालना भी सीखें। टेली प्राइम कोर्स (मूल्य ₹4000) बिल्कुल मुफ्त।</p>
+      </div>
+      <div class="offer-ticket">
+        <span class="free">MEGA SAVER</span>
+        <h3>ADCA डिप्लोमा के साथ CCC + DTP + Tally फ्री</h3>
+        <p>अगर आप ADCA में एडमिशन लेते हैं, तो आपको अलग से कंप्यूटर सर्टिफिकेट, डिजाइनिंग या अकाउंटिंग कोर्स की कोई फीस नहीं देनी होगी।</p>
+      </div>
+    </div>
+    <div class="offer-note">⚠️ नोट: यह ऑफर केवल इस शनिवार शाम 5 बजे तक के एडमिशंस के लिए ही मान्य है!</div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <span class="kicker">प्रमाणित संस्थान</span>
+      <h2>सही जगह से सीखें, ताकि सर्टिफिकेट हर जगह चले</h2>
+      <p>मार्केट में कई फर्जी संस्थान हैं, लेकिन उमा टेक्निकल कॉलेज भारत सरकार और अंतरराष्ट्रीय मानकों द्वारा पूरी तरह प्रमाणित है। हमारा सर्टिफिकेट सरकारी नौकरी और विदेश (Gulf Countries) जाने के लिए 100% मान्य है।</p>
+      <div class="stat-strip">
+        <div class="stat"><div class="num">15+</div><div class="lbl">वर्षों का भरोसा</div></div>
+        <div class="stat"><div class="num">5000+</div><div class="lbl">सफल छात्र</div></div>
+        <div class="stat"><div class="num">Govt</div><div class="lbl">द्वारा मान्यता प्राप्त</div></div>
+      </div>
+    </div>
+    <div class="badge-list">
+      <div class="badge-item">
+        <div class="ic">✓</div>
+        <div>
+          <h3>ISO 9001:2015 क्वालिटी सर्टिफाइड</h3>
+          <p>इंटरनेशनल स्टैंडर्ड की ट्रेनिंग और आधुनिक लैब इंफ्रास्ट्रक्चर की गारंटी।</p>
+        </div>
+      </div>
+      <div class="badge-item">
+        <div class="ic">N</div>
+        <div>
+          <h3>NIELIT (नाइलिट) अप्रूव्ड सेंटर</h3>
+          <p>गोरखपुर क्षेत्र में उच्च स्तरीय कंप्यूटर शिक्षा के लिए अधिकृत केंद्र।</p>
+        </div>
+      </div>
+      <div class="badge-item">
+        <div class="ic">💼</div>
+        <div>
+          <h3>बिजनेस गाइडेंस और लोन सहायता</h3>
+          <p>कोर्स के बाद जो छात्र खुद की दुकान खोलना चाहते हैं, उन्हें टूलकिट और सरकारी लोन में पूरी मदद।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">इवेंट गैलरी</span>
+      <h2>हमारे कॉलेज के पलों की झलक</h2>
+      <p>10वां अध्यागत गौरव सम्मान वार्षिकोत्सव सम्मान समारोह — उमा टेक्निकल डिग्री कॉलेज, सिद्धार्थनगर।</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item"><img src="images/DSC_8117.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 1" loading="lazy"><div class="cap">समारोह मंच</div></div>
+      <div class="gallery-item"><img src="images/DSC_8118.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 2" loading="lazy"><div class="cap">वक्ता संबोधन</div></div>
+      <div class="gallery-item"><img src="images/DSC_8119.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 3" loading="lazy"><div class="cap">मुख्य अतिथि</div></div>
+      <div class="gallery-item"><img src="images/DSC_8120.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 4" loading="lazy"><div class="cap">सम्मान समारोह</div></div>
+      <div class="gallery-item"><img src="images/DSC_8121.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 5" loading="lazy"><div class="cap">छात्र सहभागिता</div></div>
+      <div class="gallery-item"><img src="images/DSC_8122.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 6" loading="lazy"><div class="cap">पुरस्कार वितरण</div></div>
+      <div class="gallery-item"><img src="images/DSC_8123.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 7" loading="lazy"><div class="cap">मंचासीन अतिथिगण</div></div>
+      <div class="gallery-item"><img src="images/DSC_8124.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 8" loading="lazy"><div class="cap">दर्शक दीर्घा</div></div>
+      <div class="gallery-item"><img src="images/DSC_8125.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 9" loading="lazy"><div class="cap">संबोधन</div></div>
+      <div class="gallery-item"><img src="images/DSC_8126.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 10" loading="lazy"><div class="cap">छात्र समूह</div></div>
+      <div class="gallery-item"><img src="images/DSC_8127.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 11" loading="lazy"><div class="cap">भव्य ऑडिटोरियम</div></div>
+      <div class="gallery-item"><img src="images/DSC_8128.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 12" loading="lazy"><div class="cap">पूर्ण सभागार</div></div>
+      <div class="gallery-item"><img src="images/DSC_8129.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 13" loading="lazy"><div class="cap">मंच पर चर्चा</div></div>
+      <div class="gallery-item"><img src="images/DSC_8130.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 14" loading="lazy"><div class="cap">मंच व्यवस्था</div></div>
+      <div class="gallery-item"><img src="images/DSC_8131.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 15" loading="lazy"><div class="cap">सम्मान चिन्ह</div></div>
+      <div class="gallery-item"><img src="images/DSC_8132.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 16" loading="lazy"><div class="cap">भरा हुआ हॉल</div></div>
+      <div class="gallery-item"><img src="images/DSC_8133.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 17" loading="lazy"><div class="cap">उपस्थित जनसमूह</div></div>
+      <div class="gallery-item"><img src="images/DSC_8134.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 18" loading="lazy"><div class="cap">मंच संचालन</div></div>
+      <div class="gallery-item"><img src="images/DSC_8135.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 19" loading="lazy"><div class="cap">वक्ता उद्बोधन</div></div>
+      <div class="gallery-item"><img src="images/DSC03248.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 20" loading="lazy"><div class="cap">पुरस्कार प्रदान</div></div>
+      <div class="gallery-item"><img src="images/DSC03244_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 21" loading="lazy"><div class="cap">भरा हुआ सभागार</div></div>
+      <div class="gallery-item"><img src="images/DSC03245_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 22" loading="lazy"><div class="cap">माल्यार्पण समारोह</div></div>
+      <div class="gallery-item"><img src="images/DSC03246_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 23" loading="lazy"><div class="cap">सम्मान चिन्ह प्रदान</div></div>
+      <div class="gallery-item"><img src="images/DSC03247_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 24" loading="lazy"><div class="cap">दर्शक दीर्घा</div></div>
+      <div class="gallery-item"><img src="images/DSC03249_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 25" loading="lazy"><div class="cap">महानिदेशक सम्मान</div></div>
+      <div class="gallery-item"><img src="images/DSC03250_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 26" loading="lazy"><div class="cap">उपहार वितरण</div></div>
+      <div class="gallery-item"><img src="images/DSC03363.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 27" loading="lazy"><div class="cap">माल्यार्पण पल</div></div>
+      <div class="gallery-item"><img src="images/DSC03363_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 28" loading="lazy"><div class="cap">माल्यार्पण पल</div></div>
+      <div class="gallery-item"><img src="images/DSC03364.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 29" loading="lazy"><div class="cap">पुरस्कार भेंट</div></div>
+      <div class="gallery-item"><img src="images/DSC03367.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 30" loading="lazy"><div class="cap">सम्मान समारोह</div></div>
+      <div class="gallery-item"><img src="images/DSC03368.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 31" loading="lazy"><div class="cap">पुस्तक भेंट</div></div>
+      <div class="gallery-item"><img src="images/DSC03368_1.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 32" loading="lazy"><div class="cap">पुस्तक भेंट</div></div>
+      <div class="gallery-item"><img src="images/DSC03372.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 33" loading="lazy"><div class="cap">ट्रॉफी सम्मान</div></div>
+      <div class="gallery-item"><img src="images/DSC03373.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 34" loading="lazy"><div class="cap">ट्रॉफी सम्मान</div></div>
+      <div class="gallery-item"><img src="images/DSC_8138.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 35" loading="lazy"><div class="cap">भव्य ऑडिटोरियम</div></div>
+      <div class="gallery-item"><img src="images/DSC_8139.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 36" loading="lazy"><div class="cap">छात्र समूह</div></div>
+      <div class="gallery-item"><img src="images/DSC_8140.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 37" loading="lazy"><div class="cap">उपस्थित जनसमूह</div></div>
+      <div class="gallery-item"><img src="images/DSC_8141.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 38" loading="lazy"><div class="cap">पुरस्कार क्षण</div></div>
+      <div class="gallery-item"><img src="images/DSC_8142.webp" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 39" loading="lazy"><div class="cap">पुरस्कार क्षण</div></div>
+      <div class="gallery-item"><img src="images/DSC03374.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 40" loading="lazy"><div class="cap">पुस्तक भेंट समारोह</div></div>
+      <div class="gallery-item"><img src="images/DSC03375.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 41" loading="lazy"><div class="cap">पुस्तक भेंट समारोह</div></div>
+      <div class="gallery-item"><img src="images/DSC03416.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 42" loading="lazy"><div class="cap">टीम फोटो</div></div>
+      <div class="gallery-item"><img src="images/DSC03417.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 43" loading="lazy"><div class="cap">टीम फोटो</div></div>
+      <div class="gallery-item"><img src="images/DSC03418.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 44" loading="lazy"><div class="cap">टीम फोटो</div></div>
+      <div class="gallery-item"><img src="images/DSC03419.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 45" loading="lazy"><div class="cap">टीम फोटो</div></div>
+      <div class="gallery-item"><img src="images/DSC03420.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 46" loading="lazy"><div class="cap">टीम फोटो</div></div>
+      <div class="gallery-item"><img src="images/DSC03421.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 47" loading="lazy"><div class="cap">टीम फोटो</div></div>
+      <div class="gallery-item"><img src="images/DSC03422.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 48" loading="lazy"><div class="cap">टीम फोटो</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lbClose">&times;</span>
+  <span class="lightbox-nav lightbox-prev" id="lbPrev">&#10094;</span>
+  <img id="lbImg" src="" alt="बड़ी फोटो">
+  <span class="lightbox-nav lightbox-next" id="lbNext">&#10095;</span>
+</div>
+
+<section id="location" class="location">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">लोकेशन व विजिट</span>
+      <h2>आज ही आकर अपनी फ्री डेमो क्लास लें</h2>
+      <p>रुस्तमपुर चौराहा, गोरखपुर — शहर के किसी भी कोने से आसानी से पहुंचने योग्य।</p>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card">
+        <h3>कॉलेज का नया पता</h3>
+        <div class="loc-line">
+          <span class="ic">📍</span>
+          <span>पिलर नं-31, इंडियन ऑयल पेट्रोल पंप के ठीक सामने, रुस्तमपुर चौराहा, गोरखपुर, उत्तर प्रदेश - 273001</span>
+        </div>
+        <div class="loc-line">
+          <span class="ic">📞</span>
+          <span><a href="tel:+916306290994" style="color:var(--brand); font-weight:700;">+91-6306290994</a></span>
+        </div>
+        <div class="loc-line">
+          <span class="ic">🕒</span>
+          <span>ऑफिस समय: सुबह 8:00 बजे से शाम 5:00 बजे तक (रविवार बंद)</span>
+        </div>
+        <a class="directions" href="https://maps.app.goo.gl/PJdwLKXbjPG6shZZA" target="_blank" rel="noopener">🗺️ Google Maps पर रास्ता देखें (Click Here) →</a>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.8569838381534!2d83.36279037613589!3d26.734934976752835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399143dfca4ea87f%3A0xe54e1a067ff0c8f5!2zMjbCsDQ0JzA1LjgiTiA4M8KwMjEnNTMuOCJF!5e0!3m2!1shi!2sin!4v1714800000000!5m2!1shi!2sin"
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+          title="उमा टेक्निकल डिग्री कॉलेज लोकेशन मैप">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="fbrand"><div class="mark"></div><span>उमा टेक्निकल कॉलेज</span></div>
+        <p style="font-size:0.95rem; max-width:36ch; line-height: 1.7;">गोरखपुर का अग्रणी आत्मनिर्भर प्रशिक्षण केंद्र। हम हुनर सिखाते हैं, जो जिंदगी भर काम आता है।</p>
+      </div>
+      <div>
+        <h4>क्विक लिंक्स</h4>
+        <ul>
+          <li><a href="#courses">कंप्यूटर डिप्लोमा</a></li>
+          <li><a href="#courses">एसी-फ्रिज मैकेनिकल कोर्स</a></li>
+          <li><a href="#offers">फीस डिस्काउंट ऑफर</a></li>
+          <li><a href="#gallery">इवेंट गैलरी</a></li>
+          <li><a href="#location">फ्री डेमो क्लास बुक करें</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>सीधे संपर्क करें</h4>
+        <ul>
+          <li>📞 <a href="tel:+916306290994" style="color:white; font-weight:700;">+91-6306290994</a></li>
+          <li>📍 रुस्तमपुर चौराहा, पेट्रोल पंप के सामने, गोरखपुर</li>
+          <li>💬 WhatsApp: +91-6306290994</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 उमा टेक्निकल डिग्री कॉलेज. सर्वाधिकार सुरक्षित।</span>
+      <span>ISO 9001:2015 सर्टिफाइड | NIELIT केंद्र</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Modern Smart Sticky Bar for Mobile Conversion -->
+<div class="sticky-call">
+  <a class="sticky-btn wp-b" href="https://wa.me/916306290994?text=Hi,%20I%20am%20interested%20in%20admission" target="_blank">WhatsApp करें</a>
+  <a class="sticky-btn call-b" href="tel:+916306290994">अभी कॉल करें</a>
+</div>
+
+<script>
+  (function(){
+    var images = Array.from(document.querySelectorAll('#galleryGrid img'));
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lbImg');
+    var idx = 0;
+
+    function open(i){
+      idx = i;
+      lbImg.src = images[idx].getAttribute('src');
+      lb.classList.add('open');
+    }
+    function close(){ lb.classList.remove('open'); }
+    function next(){ idx = (idx + 1) % images.length; lbImg.src = images[idx].getAttribute('src'); }
+    function prev(){ idx = (idx - 1 + images.length) % images.length; lbImg.src = images[idx].getAttribute('src'); }
+
+    images.forEach(function(img, i){
+      img.parentElement.addEventListener('click', function(){ open(i); });
+    });
+    document.getElementById('lbClose').addEventListener('click', close);
+    document.getElementById('lbNext').addEventListener('click', next);
+    document.getElementById('lbPrev').addEventListener('click', prev);
+    lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+    document.addEventListener('keydown', function(e){
+      if(!lb.classList.contains('open')) return;
+      if(e.key === 'Escape') close();
+      if(e.key === 'ArrowRight') next();
+      if(e.key === 'ArrowLeft') prev();
+    });
+  })();
+</script>
+
+</body>
+</html>
