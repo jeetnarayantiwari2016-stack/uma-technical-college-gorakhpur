@@ -144,30 +144,6 @@
       text-align: center;
     }
 
-    .hero-banner::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -20%;
-      width: 600px;
-      height: 600px;
-      background: rgba(37, 99, 235, 0.15);
-      border-radius: 50%;
-      filter: blur(80px);
-    }
-
-    .hero-banner::after {
-      content: '';
-      position: absolute;
-      bottom: -30%;
-      right: -10%;
-      width: 500px;
-      height: 500px;
-      background: rgba(16, 185, 129, 0.15);
-      border-radius: 50%;
-      filter: blur(80px);
-    }
-
     .banner-content {
       max-width: 950px;
       margin: 0 auto;
@@ -187,7 +163,6 @@
       gap: 6px;
       margin-bottom: 35px;
       border: 1px solid #fde68a;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
     .banner-title {
@@ -195,34 +170,21 @@
       font-weight: 800;
       line-height: 1.3;
       margin-bottom: 25px;
-      letter-spacing: -0.5px;
-      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .banner-title .highlight-blue {
       color: #38bdf8;
-      background: linear-gradient(to right, #38bdf8, #60a5fa);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
 
     .banner-title .highlight-green {
       color: #34d399;
-      background: linear-gradient(to right, #34d399, #059669);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       border-bottom: 3px dashed #34d399;
-      padding-bottom: 2px;
     }
 
     .banner-subtitle {
       font-size: 1.3rem;
       color: #cbd5e1;
       margin-bottom: 45px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .btn-group {
@@ -242,12 +204,6 @@
       font-weight: 700;
       font-size: 1.15rem;
       box-shadow: 0 8px 20px rgba(16, 185, 129, 0.4);
-      transition: all 0.3s ease;
-    }
-
-    .btn-main:hover {
-      background: #059669;
-      transform: translateY(-2px);
     }
 
     .btn-sub {
@@ -257,15 +213,7 @@
       border-radius: 50px;
       text-decoration: none;
       font-weight: 500;
-      font-size: 1.15rem;
       border: 1px solid rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(5px);
-      transition: all 0.3s ease;
-    }
-
-    .btn-sub:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: translateY(-2px);
     }
 
     .features-list {
@@ -277,25 +225,9 @@
       padding: 20px 40px;
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.1);
-      display: inline-flex;
     }
 
-    .feature-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 500;
-      color: #e2e8f0;
-      font-size: 1.05rem;
-    }
-
-    .feature-icon {
-      color: #34d399;
-      font-weight: bold;
-      font-size: 1.3rem;
-    }
-
-    /* 4. Course Section Styling */
+    /* 4. Course Styling */
     .section-padding {
       padding: 80px 0;
     }
@@ -311,9 +243,7 @@
     .section-subtitle {
       text-align: center;
       color: #64748b;
-      max-width: 600px;
-      margin: 0 auto 50px auto;
-      font-size: 1.1rem;
+      margin-bottom: 50px;
     }
 
     .grid-3 {
@@ -326,89 +256,31 @@
       background: #ffffff;
       border-radius: 12px;
       padding: 30px;
-      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.06);
       border: 1px solid #e2e8f0;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .course-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
-    }
-
-    .course-badge {
-      background: #e0f2fe;
-      color: #0369a1;
-      padding: 4px 12px;
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      display: inline-block;
-      margin-bottom: 15px;
-    }
-
-    .course-name {
-      font-size: 1.5rem;
-      color: #0f172a;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-
-    .course-desc {
-      color: #475569;
-      font-size: 0.95rem;
-      margin-bottom: 20px;
-    }
-
-    .course-details {
-      border-top: 1px solid #f1f5f9;
-      padding-top: 15px;
-    }
-
-    .detail-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 8px;
-      font-size: 0.95rem;
-    }
-
-    .detail-label {
-      color: #64748b;
-    }
-
-    .detail-val {
-      font-weight: 700;
-      color: #1e293b;
-    }
-
-    /* 5. Photo Gallery Section (48 Photo Area) */
-    .gallery-section {
-      background-color: #ffffff;
-    }
-
+    /* 5. Smart Gallery Section */
     .gallery-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 20px;
       margin-top: 30px;
     }
 
     .gallery-item {
       overflow: hidden;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       border: 1px solid #e2e8f0;
-      background: #f1f5f9;
-      height: 180px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      height: 200px;
+      background: #cbd5e1;
     }
 
     .gallery-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
       transition: transform 0.3s ease;
     }
 
@@ -416,157 +288,75 @@
       transform: scale(1.05);
     }
 
-    /* 6. Info Section / Offers */
-    .offer-section {
-      background-color: #f1f5f9;
-    }
-
-    .offer-box {
-      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-      border-radius: 20px;
-      padding: 40px;
-      color: white;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
-    }
-
-    .offer-box h3 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-
-    /* 7. Google Maps Location Section */
+    /* 6. Location Section */
     .map-container {
       width: 100%;
-      height: 400px;
-      border-radius: 12px;
+      height: 450px;
+      border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-      border: 1px solid #e2e8f0;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      border: 1px solid #cbd5e1;
+      margin-top: 20px;
     }
 
-    /* 8. Footer Section */
+    /* 7. Footer */
     footer {
       background: #0f172a;
       color: #cbd5e1;
       padding: 40px 0;
       text-align: center;
-      border-top: 4px solid #2563eb;
     }
 
-    footer p {
-      margin-bottom: 10px;
-    }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
-      .topstrip .wrap {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-      }
-      .navrow {
-        flex-direction: column;
-        gap: 16px;
-      }
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-      }
-      .links a {
-        margin: 0;
-      }
-      .hero-banner {
-        padding: 60px 0;
-      }
-      .banner-title {
-        font-size: 2.3rem;
-      }
-      .btn-group {
-        flex-direction: column;
-        width: 100%;
-        padding: 0 20px;
-      }
-      .btn-main, .btn-sub {
-        text-align: center;
-        width: 100%;
-      }
-      .features-list {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 15px;
-        width: 100%;
-      }
+      .banner-title { font-size: 2.3rem; }
+      .grid-3 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- 1. Top Notification Strip -->
+  <!-- 1. Top Strip -->
   <div class="topstrip">
     <div class="wrap">
       <div class="promo-text">
         <span class="live-dot"></span>
-        <span>🎯 सत्र 2026 एडमिशन ओपन: भारत सरकार द्वारा मान्यता प्राप्त ISO 9001:2015 संस्थान</span>
+        <span>🎯 सत्र 2026 एडमिशन ओपन: भारत सरकार द्वारा मान्यता प्राप्त संस्थान</span>
       </div>
-      <a href="tel:+916306290994" class="phone-link">📞 डायरेक्ट एडमिशन हेल्पलाइन: +91-6306290994</a>
+      <a href="tel:+916306290994" class="phone-link">📞 एडमिशन हेल्पलाइन: +91-6306290994</a>
     </div>
   </div>
 
-  <!-- 2. Main Header Container -->
+  <!-- 2. Header Container -->
   <header class="site">
     <div class="wrap navrow">
       <a href="#" class="brand-logo-link">
-        <img src="logo.jpeg" alt="Uma Technical Degree College Logo" class="main-logo">
+        <img src="logo.jpeg" alt="Logo" class="main-logo">
       </a>
-      
       <nav class="links">
         <a href="#courses">कोर्स लिस्ट</a>
-        <a href="#gallery">गैलरी (48 फोटो)</a>
-        <a href="#offers">स्पेशल ऑफर</a>
-        <a href="#location">लोकेशन (Maps)</a>
+        <a href="#gallery">कैंपस गैलरी</a>
+        <a href="#location">लोकेशन</a>
       </nav>
       <a class="cta-call" href="tel:+916306290994">📞 अभी बात करें</a>
     </div>
   </header>
 
-  <!-- 3. New Modern Premium Banner Type Section -->
+  <!-- 3. Hero Banner Section -->
   <main class="hero-banner">
     <div class="wrap">
       <div class="banner-content">
-        
-        <div class="offer-tag">
-          🔥 ऑफर सिर्फ इस हफ्ते के एडमिशन पर: ₹2000 की सीधी छूट!
-        </div>
-
-        <h1 class="banner-title">
+        <div class="offer-tag">🔥 विशेष ऑफर: एडमिशन पर ₹2000 की सीधी छूट!</div>
+        <h1 class="banner-title font-bold">
           <span class="highlight-blue">गोरखपुर की नंबर-1 NIELIT</span> <br>
           <span class="highlight-green">स्वीकृत</span> प्रैक्टिकल ट्रेनिंग इंस्टिट्यूट
         </h1>
-
         <p class="banner-subtitle">
-          अब सिर्फ थ्योरी नहीं, 100% लैब प्रैक्टिकल! कंप्यूटर कोर्सेज (CCC, ADCA) से लेकर स्मार्ट AC-फ्रिज, इनवर्टर, LED TV रिपेयरिंग और एडवांस इलेक्ट्रॉनिक्स तक — वह सीखें जिससे तुरंत नौकरी या अपना बिज़नेस शुरू हो।
+          कंप्यूटर कोर्सेज (CCC, ADCA) से लेकर स्मार्ट AC-फ्रिज, इनवर्टर, LED TV रिपेयरिंग और एडवांस इलेक्ट्रॉनिक्स तक — सीखें 100% लाइव प्रैक्टिकल लैब्स में।
         </p>
-
         <div class="btn-group">
           <a href="tel:+916306290994" class="btn-main">🚀 सीट बुक करने के लिए कॉल करें</a>
-          <a href="https://wa.me/916306290994" class="btn-sub">💬 WhatsApp पर सिलेबस मंगाएं</a>
+          <a href="https://wa.me/916306290994" class="btn-sub">💬 WhatsApp पर संपर्क करें</a>
         </div>
-
-        <div class="features-list">
-          <div class="feature-item">
-            <span class="feature-icon">✓</span> 100% जॉब प्लेसमेंट सहायता
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">✓</span> लाइफटाइम प्रैक्टिकल लैब सपोर्ट
-          </div>
-          <div class="feature-item">
-            <span class="feature-icon">✓</span> हॉस्टल की उत्तम सुविधा
-          </div>
-        </div>
-
       </div>
     </div>
   </main>
@@ -575,84 +365,72 @@
   <section id="courses" class="section-padding">
     <div class="wrap">
       <h2 class="section-title">हमारे मुख्य कोर्सेज</h2>
-      <p class="section-subtitle">इंडस्ट्री डिमांड के अनुसार तैयार किए गए प्रैक्टिकल कोर्सेज जो आपको करियर में आगे बढ़ाएंगे।</p>
-      
+      <p class="section-subtitle">इंडस्ट्री डिमांड के अनुसार तैयार किए गए प्रैक्टिकल कोर्सेज</p>
       <div class="grid-3">
-        <!-- Course 1 -->
         <div class="course-card">
-          <span class="course-badge">मोस्ट पॉपुलर</span>
-          <h3 class="course-name">ADCA (Advance Diploma in Computer Applications)</h3>
-          <p class="course-desc">बेसिक कंप्यूटर से लेकर एडवांस एक्सेल, ग्राफिक डिजाइनिंग और अकाउंटिंग (Tally Prime) की पूरी प्रैक्टिकल ट्रेनिंग।</p>
-          <div class="course-details">
-            <div class="detail-row"><span class="detail-label">अवधि:</span><span class="detail-val">12 महीने</span></div>
-            <div class="detail-row"><span class="detail-label">योग्यता:</span><span class="detail-val">10th / 12th</span></div>
-          </div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">ADCA</h3>
+          <p>बेसिक कंप्यूटर, एडवांस एक्सेल, ग्राफिक डिजाइनिंग और Tally Prime की पूरी प्रैक्टिकल ट्रेनिंग।</p>
         </div>
-
-        <!-- Course 2 -->
         <div class="course-card">
-          <span class="course-badge">सरकारी नौकरी हेतु</span>
-          <h3 class="course-name">CCC (Course on Computer Concepts)</h3>
-          <p class="course-desc">NIELIT द्वारा प्रमाणित कोर्स, जो सभी प्रकार की सरकारी और प्राइवेट नौकरियों के लिए अनिवार्य है। 100% पास गारंटी।</p>
-          <div class="course-details">
-            <div class="detail-row"><span class="detail-label">अवधि:</span><span class="detail-val">3 महीने</span></div>
-            <div class="detail-row"><span class="detail-label">परीक्षा:</span><span class="detail-val">ऑनलाइन (NIELIT)</span></div>
-          </div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">CCC</h3>
+          <p>NIELIT द्वारा प्रमाणित कोर्स, जो सभी प्रकार की सरकारी नौकरियों के लिए अनिवार्य है।</p>
         </div>
-
-        <!-- Course 3 -->
         <div class="course-card">
-          <span class="course-badge">तकनीकी स्वरोजगार</span>
-          <h3 class="course-name">स्मार्ट AC, फ्रिज & LED TV रिपेयरिंग</h3>
-          <p class="course-desc">पूरी तरह से प्रैक्टिकल आधारित कोर्स जिसमें इन्वर्टर कंप्रेसर, पीसीबी रिपेयरिंग और इलेक्ट्रॉनिक्स फॉल्ट्स को ठीक करना सिखाया जाता है।</p>
-          <div class="course-details">
-            <div class="detail-row"><span class="detail-label">अवधि:</span><span class="detail-val">4-6 महीने</span></div>
-            <div class="detail-row"><span class="detail-label">ट्रेनिंग:</span><span class="detail-val">100% लाइव लैब</span></div>
-          </div>
+          <h3 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 10px;">स्मार्ट AC & LED TV</h3>
+          <p>इन्वर्टर कंप्रेसर, पीसीबी रिपेयरिंग और इलेक्ट्रॉनिक्स फॉल्ट्स को ठीक करने की लाइव ट्रेनिंग।</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. Photo Gallery Section (48 Photo Blocks) -->
-  <section id="gallery" class="section-padding gallery-section">
+  <!-- 5. Live Campus Photo Gallery (स्क्रीनशॉट की फ़ाइलों के असली नामों के साथ) -->
+  <section id="gallery" class="section-padding" style="background-color: #f1f5f9;">
     <div class="wrap">
       <h2 class="section-title">कॉलेज कैंपस और लैब गैलरी</h2>
-      <p class="section-subtitle">हमारे छात्र-छात्राओं और आधुनिक प्रैक्टिकल लैब की कुछ झलकियां।</p>
+      <p class="section-subtitle">हमारे आधुनिक प्रैक्टिकल क्लासरूम की वास्तविक झलकियां</p>
       
       <div class="gallery-grid">
-        <!-- नोट: यहाँ '48.jpeg' इमेज का नाम दिया गया है, अगर आपकी अन्य इमेजेज के नाम अलग हैं जैसे 1.jpg, 2.jpg तो आप src में बदल सकते हैं -->
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 1"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 2"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 3"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 4"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 5"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 6"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 7"></div>
-        <div class="gallery-item"><img src="48.jpeg" alt="Campus Photo 8"></div>
+        <!-- आपके गिटहब में मौजूद असली फ़ाइलों के नाम यहाँ जोड़ दिए गए हैं -->
+        <div class="gallery-item"><img src="DSC03373.JPG" alt="Campus Photo 1"></div>
+        <div class="gallery-item"><img src="DSC03374.JPG" alt="Campus Photo 2"></div>
+        <div class="gallery-item"><img src="DSC03375.JPG" alt="Campus Photo 3"></div>
+        <div class="gallery-item"><img src="DSC03416.JPG" alt="Campus Photo 4"></div>
+        <div class="gallery-item"><img src="DSC03417.JPG" alt="Campus Photo 5"></div>
+        <div class="gallery-item"><img src="DSC03418.JPG" alt="Campus Photo 6"></div>
+        <div class="gallery-item"><img src="DSC03419.JPG" alt="Campus Photo 7"></div>
+        <div class="gallery-item"><img src="DSC03420.JPG" alt="Campus Photo 8"></div>
+        <div class="gallery-item"><img src="DSC03421.JPG" alt="Campus Photo 9"></div>
+        <div class="gallery-item"><img src="DSC03422.JPG" alt="Campus Photo 10"></div>
+        <div class="gallery-item"><img src="DSC_8117.JPG" alt="Campus Photo 11"></div>
+        
+        <!-- Webp फॉर्मेट की फ़ाइलें -->
+        <div class="gallery-item"><img src="DSC_8118.webp" alt="Campus Photo 12"></div>
+        <div class="gallery-item"><img src="DSC_8119.webp" alt="Campus Photo 13"></div>
+        <div class="gallery-item"><img src="DSC_8120.webp" alt="Campus Photo 14"></div>
+        <div class="gallery-item"><img src="DSC_8135.webp" alt="Campus Photo 15"></div>
+        <div class="gallery-item"><img src="DSC_8138.webp" alt="Campus Photo 16"></div>
+        <div class="gallery-item"><img src="DSC_8139.webp" alt="Campus Photo 17"></div>
+        <div class="gallery-item"><img src="DSC_8140.webp" alt="Campus Photo 18"></div>
+        <div class="gallery-item"><img src="DSC_8141.webp" alt="Campus Photo 19"></div>
+        <div class="gallery-item"><img src="DSC_8142.webp" alt="Campus Photo 20"></div>
+        
+        <!-- अन्य मुख्य इमेज फ़ाइलें -->
+        <div class="gallery-item"><img src="DSC03244_1.JPG" alt="Campus Photo 21"></div>
+        <div class="gallery-item"><img src="DSC03245_1.JPG" alt="Campus Photo 22"></div>
+        <div class="gallery-item"><img src="DSC03246_1.JPG" alt="Campus Photo 23"></div>
+        <div class="gallery-item"><img src="DSC03247_1.JPG" alt="Campus Photo 24"></div>
       </div>
     </div>
   </section>
 
-  <!-- 6. Special Offers Section -->
-  <section id="offers" class="section-padding offer-section">
-    <div class="wrap">
-      <div class="offer-box">
-        <h3>✨ सीमित समय का विशेष ऑफर! ✨</h3>
-        <p style="font-size: 1.2rem; margin-bottom: 20px;">इस सत्र के नए बैच में एडमिशन लेने पर डायरेक्ट ₹2000 की छूट और साथ में फ्री स्टडी मटेरियल बैग दिया जाएगा।</p>
-        <a href="tel:+916306290994" style="background:#0f172a; color:white; padding:12px 30px; border-radius:50px; text-decoration:none; font-weight:700; display:inline-block;">अपनी छूट अभी क्लेम करें</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Google Maps Location Section -->
+  <!-- 6. Google Maps Location Section -->
   <section id="location" class="section-padding">
     <div class="wrap">
       <h2 class="section-title">गूगल मैप्स पर हमारी लोकेशन</h2>
-      <p class="section-subtitle">नीचे दिए गए मैप की मदद से आप सीधे हमारे कॉलेज (गोरखपुर) तक पहुँच सकते हैं।</p>
+      <p class="section-subtitle">नीचे दिए गए लाइव मैप की मदद से आप सीधे हमारे गोरखपुर कैंपस तक पहुँच सकते हैं।</p>
       
       <div class="map-container">
-        <!-- लाइव गोरखपुर लोकेशन का गूगल मैप एम्बेड कर दिया गया है -->
+        <!-- लाइव और वर्किंग गूगल मैप्स का कोड -->
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56983.47353912644!2d83.33719065!3d26.7916568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!1s0x3991446a0c332497%3A0x94f6fdab2d040f5a!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1716000000000!5m2!1sen!2sin" 
           width="100%" 
@@ -663,18 +441,13 @@
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-      
-      <div style="text-align: center; margin-top: 30px;">
-        <p style="font-size: 1.3rem; font-weight: 700; color: #2563eb;">📞 अधिक सहायता के लिए कॉल करें: +91-6306290994</p>
-      </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- 7. Footer -->
   <footer>
     <div class="wrap">
-      <p>© 2026 उमा टेक्निकल डिग्री कॉलेज. सर्वाधिकार सुरक्षित।</p>
-      <p style="font-size: 0.85rem; color: #64748b;">Designed & Developed for Quality Technical Education</p>
+      <p>© 2026 उमा टेक्निकल डिग्री कॉलेज, गोरखपुर। सर्वाधिकार सुरक्षित।</p>
     </div>
   </footer>
 
