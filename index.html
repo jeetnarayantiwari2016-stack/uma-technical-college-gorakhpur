@@ -18,6 +18,10 @@
       font-family: 'Noto Sans Devanagari', sans-serif;
     }
     
+    html {
+      scroll-behavior: smooth;
+    }
+    
     body {
       background-color: #f8fafc;
       color: #1e293b;
@@ -130,7 +134,7 @@
       box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2);
     }
 
-    /* 3. New Beautiful Hero Banner Section */
+    /* 3. New Modern Premium Banner Type Section */
     .hero-banner {
       background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
       color: #ffffff;
@@ -140,7 +144,6 @@
       text-align: center;
     }
 
-    /* Decorative background shapes for Banner look */
     .hero-banner::before {
       content: '';
       position: absolute;
@@ -187,7 +190,6 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    /* Banner Specific Heading Style */
     .banner-title {
       font-size: 3.6rem;
       font-weight: 800;
@@ -197,7 +199,6 @@
       text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* Color highlights inside the banner */
     .banner-title .highlight-blue {
       color: #38bdf8;
       background: linear-gradient(to right, #38bdf8, #60a5fa);
@@ -224,7 +225,6 @@
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
 
-    /* Action Buttons Inside Banner */
     .btn-group {
       display: flex;
       gap: 20px;
@@ -248,7 +248,6 @@
     .btn-main:hover {
       background: #059669;
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.5);
     }
 
     .btn-sub {
@@ -269,7 +268,6 @@
       transform: translateY(-2px);
     }
 
-    /* Highlight Features Banner Style */
     .features-list {
       display: flex;
       gap: 40px;
@@ -295,6 +293,124 @@
       color: #34d399;
       font-weight: bold;
       font-size: 1.3rem;
+    }
+
+    /* 4. Course Section Styling */
+    .section-padding {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #0f172a;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #64748b;
+      max-width: 600px;
+      margin: 0 auto 50px auto;
+      font-size: 1.1rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .course-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.06);
+      border: 1px solid #e2e8f0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    }
+
+    .course-badge {
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    .course-name {
+      font-size: 1.5rem;
+      color: #0f172a;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .course-desc {
+      color: #475569;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .course-details {
+      border-top: 1px solid #f1f5f9;
+      padding-top: 15px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+    }
+
+    .detail-label {
+      color: #64748b;
+    }
+
+    .detail-val {
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    /* 5. Info Section / Offers */
+    .offer-section {
+      background-color: #f1f5f9;
+    }
+
+    .offer-box {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      border-radius: 20px;
+      padding: 40px;
+      color: white;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(16, 185, 129, 0.2);
+    }
+
+    .offer-box h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    /* 6. Footer Section */
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      padding: 40px 0;
+      text-align: center;
+      border-top: 4px solid #2563eb;
+    }
+
+    footer p {
+      margin-bottom: 10px;
     }
 
     /* Responsive Design */
@@ -323,9 +439,6 @@
       .banner-title {
         font-size: 2.3rem;
       }
-      .banner-subtitle {
-        font-size: 1.1rem;
-      }
       .btn-group {
         flex-direction: column;
         width: 100%;
@@ -351,7 +464,7 @@
     <div class="wrap">
       <div class="promo-text">
         <span class="live-dot"></span>
-        <span>🎯 सत्र 2026 एडमिशन开放: भारत सरकार द्वारा मान्यता प्राप्त ISO 9001:2015 संस्थान</span>
+        <span>🎯 सत्र 2026 एडमिशन ओपन: भारत सरकार द्वारा मान्यता प्राप्त ISO 9001:2015 संस्थान</span>
       </div>
       <a href="tel:+916306290994" class="phone-link">📞 डायरेक्ट एडमिशन हेल्पलाइन: +91-6306290994</a>
     </div>
@@ -367,8 +480,6 @@
       <nav class="links">
         <a href="#courses">कोर्स लिस्ट</a>
         <a href="#offers">स्पेशल ऑफर</a>
-        <a href="#about">प्रमाण पत्र</a>
-        <a href="#gallery">गैलरी</a>
         <a href="#location">लोकेशन</a>
       </nav>
       <a class="cta-call" href="tel:+916306290994">📞 अभी बात करें</a>
@@ -380,29 +491,24 @@
     <div class="wrap">
       <div class="banner-content">
         
-        <!-- Offer Tag -->
         <div class="offer-tag">
           🔥 ऑफर सिर्फ इस हफ्ते के एडमिशन पर: ₹2000 की सीधी छूट!
         </div>
 
-        <!-- Main Heading Formatted like a Professional Banner -->
         <h1 class="banner-title">
           <span class="highlight-blue">गोरखपुर की नंबर-1 NIELIT</span> <br>
           <span class="highlight-green">स्वीकृत</span> प्रैक्टिकल ट्रेनिंग इंस्टिट्यूट
         </h1>
 
-        <!-- Subtitle Text -->
         <p class="banner-subtitle">
           अब सिर्फ थ्योरी नहीं, 100% लैब प्रैक्टिकल! कंप्यूटर कोर्सेज (CCC, ADCA) से लेकर स्मार्ट AC-फ्रिज, इनवर्टर, LED TV रिपेयरिंग और एडवांस इलेक्ट्रॉनिक्स तक — वह सीखें जिससे तुरंत नौकरी या अपना बिज़नेस शुरू हो।
         </p>
 
-        <!-- CTAs / Buttons -->
         <div class="btn-group">
           <a href="tel:+916306290994" class="btn-main">🚀 सीट बुक करने के लिए कॉल करें</a>
           <a href="https://wa.me/916306290994" class="btn-sub">💬 WhatsApp पर सिलेबस मंगाएं</a>
         </div>
 
-        <!-- Highlights / Features inside Banner Box -->
         <div class="features-list">
           <div class="feature-item">
             <span class="feature-icon">✓</span> 100% जॉब प्लेसमेंट सहायता
@@ -418,6 +524,77 @@
       </div>
     </div>
   </main>
+
+  <!-- 4. Courses Section -->
+  <section id="courses" class="section-padding">
+    <div class="wrap">
+      <h2 class="section-title">हमारे मुख्य कोर्सेज</h2>
+      <p class="section-subtitle">इंडस्ट्री डिमांड के अनुसार तैयार किए गए प्रैक्टिकल कोर्सेज जो आपको करियर में आगे बढ़ाएंगे।</p>
+      
+      <div class="grid-3">
+        <!-- Course 1 -->
+        <div class="course-card">
+          <span class="course-badge">मोस्ट पॉपुलर</span>
+          <h3 class="course-name">ADCA (Advance Diploma in Computer Applications)</h3>
+          <p class="course-desc">बेसिक कंप्यूटर से लेकर एडवांस एक्सेल, ग्राफिक डिजाइनिंग और अकाउंटिंग (Tally Prime) की पूरी प्रैक्टिकल ट्रेनिंग।</p>
+          <div class="course-details">
+            <div class="detail-row"><span class="detail-label">अवधि:</span><span class="detail-val">12 महीने</span></div>
+            <div class="detail-row"><span class="detail-label">योग्यता:</span><span class="detail-val">10th / 12th</span></div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="course-card">
+          <span class="course-badge">सरकारी नौकरी हेतु</span>
+          <h3 class="course-name">CCC (Course on Computer Concepts)</h3>
+          <p class="course-desc">NIELIT द्वारा प्रमाणित कोर्स, जो सभी प्रकार की सरकारी और प्राइवेट नौकरियों के लिए अनिवार्य है। 100% पास गारंटी।</p>
+          <div class="course-details">
+            <div class="detail-row"><span class="detail-label">अवधि:</span><span class="detail-val">3 महीने</span></div>
+            <div class="detail-row"><span class="detail-label">परीक्षा:</span><span class="detail-val">ऑनलाइन (NIELIT)</span></div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="course-card">
+          <span class="course-badge">तकनीकी स्वरोजगार</span>
+          <h3 class="course-name">स्मार्ट AC, फ्रिज & LED TV रिपेयरिंग</h3>
+          <p class="course-desc">पूरी तरह से प्रैक्टिकल आधारित कोर्स जिसमें इन्वर्टर कंप्रेसर, पीसीबी रिपेयरिंग और इलेक्ट्रॉनिक्स फॉल्ट्स को ठीक करना सिखाया जाता है।</p>
+          <div class="course-details">
+            <div class="detail-row"><span class="detail-label">अवधि:</span><span class="detail-val">4-6 महीने</span></div>
+            <div class="detail-row"><span class="detail-label">ट्रेनिंग:</span><span class="detail-val">100% लाइव लैब</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Special Offers Section -->
+  <section id="offers" class="section-padding offer-section">
+    <div class="wrap">
+      <div class="offer-box">
+        <h3>✨ सीमित समय का विशेष ऑफर! ✨</h3>
+        <p style="font-size: 1.2rem; margin-bottom: 20px;">इस सत्र के नए बैच में एडमिशन लेने पर डायरेक्ट ₹2000 की छूट और साथ में फ्री स्टडी मटेरियल बैग दिया जाएगा।</p>
+        <a href="tel:+916306290994" style="background:#0f172a; color:white; padding:12px 30px; border-radius:50px; text-decoration:none; font-weight:700; display:inline-block;">अपनी छूट अभी क्लेम करें</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Location Section -->
+  <section id="location" class="section-padding">
+    <div class="wrap" style="text-align: center;">
+      <h2 class="section-title">हमारा संस्थान कहाँ है?</h2>
+      <p class="section-subtitle">उमा टेक्निकल डिग्री कॉलेज, गोरखपुर, उत्तर प्रदेश। आप नीचे दिए गए नंबर पर कॉल करके आसानी से रास्ता पूछ सकते हैं।</p>
+      <p style="font-size: 1.3rem; font-weight: 700; color: #2563eb; margin-bottom: 20px;">📞 संपर्क करें: +91-6306290994</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap">
+      <p>© 2026 उमा टेक्निकल डिग्री कॉलेज. सर्वाधिकार सुरक्षित।</p>
+      <p style="font-size: 0.85rem; color: #64748b;">Designed & Developed for Quality Technical Education</p>
+    </div>
+  </footer>
 
 </body>
 </html>
