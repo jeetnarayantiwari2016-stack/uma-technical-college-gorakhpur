@@ -47,16 +47,54 @@
     *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
   }
 
-  /* ---------- Top strip ---------- */
+  /* ---------- Modern Top Strip Banner ---------- */
   .topstrip{
-    background:var(--ink);
-    color:var(--paper-dim);
-    font-size:0.85rem;
-    padding:8px 0;
+    background: linear-gradient(90deg, #0F172A 0%, #1E293B 100%);
+    color: var(--paper-dim);
+    font-size: 0.9rem;
+    padding: 10px 0;
     font-weight: 500;
+    border-bottom: 2px solid var(--gold);
   }
-  .topstrip .wrap{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
-  .topstrip a{color:var(--gold); font-weight:700;}
+  .topstrip .wrap{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 16px; 
+    flex-wrap: wrap;
+  }
+  .topstrip .promo-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .topstrip .live-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--rust);
+    border-radius: 50%;
+    display: inline-block;
+    animation: blink 1.2s infinite;
+  }
+  .topstrip a.phone-link {
+    color: var(--white); 
+    font-weight: 700;
+    background: var(--gold-deep);
+    padding: 4px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+  }
+  .topstrip a.phone-link:hover {
+    background: var(--gold);
+    color: var(--ink);
+    transform: translateY(-1px);
+  }
+  @keyframes blink {
+    0% { opacity: 0.2; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1.1); }
+    100% { opacity: 0.2; transform: scale(0.9); }
+  }
 
   /* ---------- Header ---------- */
   header.site{
@@ -309,6 +347,7 @@
   .sticky-call{display:none;}
 
   @media (max-width: 880px){
+    .topstrip .wrap{justify-content: center; text-align: center;}
     nav.links{display:none;}
     .hero .wrap{grid-template-columns:1fr; text-align:center;}
     .hero p.lead{margin-left:auto; margin-right:auto;}
@@ -346,8 +385,11 @@
 
 <div class="topstrip">
   <div class="wrap">
-    <span>🎯 सत्र 2026 एडमिशन ओपन: भारत सरकार द्वारा मान्यता प्राप्त ISO 9001:2015 संस्थान</span>
-    <a href="tel:+916306290994">📞 डायरेक्ट एडमिशन हेल्पलाइन: +91-6306290994</a>
+    <div class="promo-text">
+      <span class="live-dot"></span>
+      <span>सत्र 2026 एडमिशन ओपन: भारत सरकार द्वारा मान्यता प्राप्त ISO 9001:2015 संस्थान</span>
+    </div>
+    <a href="tel:+916306290994" class="phone-link">📞 डायरेक्ट एडमिशन हेल्पलाइन: +91-6306290994</a>
   </div>
 </div>
 
@@ -424,7 +466,7 @@
       </div>
       <div class="course-card">
         <h3>स्मार्ट ए.सी. रिपेयरिंग</h3>
-        <p>इन्वर्टर AC, स्प्लिट AC की गैस चार्जिंग, फॉल्ट फाइंडिंग और कंपलीट कंप्रेसर रिपेयरिंग।</p>
+        <p>इन्वर्टर AC, स्प्लिट AC की gas चार्जिंग, फॉल्ट फाइंडिंग और कंपलीट कंप्रेसर रिपेयरिंग।</p>
         <span class="tag">हाई डिमांड</span>
       </div>
       <div class="course-card">
@@ -588,8 +630,6 @@
       <div class="gallery-item"><img src="DSC03420.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 46" loading="lazy"></div>
       <div class="gallery-item"><img src="DSC03421.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 47" loading="lazy"></div>
       <div class="gallery-item"><img src="DSC03422.JPG" alt="उमा टेक्निकल कॉलेज कार्यक्रम फोटो 48" loading="lazy"></div>
-    </div>
-    </div>
     </div>
   </div>
 </section>
