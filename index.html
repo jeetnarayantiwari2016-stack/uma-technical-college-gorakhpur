@@ -216,17 +216,6 @@
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
-    .features-list {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-      flex-wrap: wrap;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 20px 40px;
-      border-radius: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
     /* 4. Course Styling */
     .section-padding {
       padding: 80px 0;
@@ -288,28 +277,184 @@
       transform: scale(1.05);
     }
 
-    /* 6. Location Section */
-    .map-container {
+    /* 6. Location Section Styles */
+    .kicker {
+      display: inline-block;
+      color: #D97706;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+
+    .loc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 40px;
+      margin-top: 30px;
+      align-items: start;
+    }
+
+    .loc-card {
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+    }
+
+    .loc-card h3 {
+      font-size: 1.5rem;
+      color: #0f172a;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .loc-line {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      align-items: flex-start;
+      font-size: 1rem;
+      color: #4b5563;
+    }
+
+    .loc-line .ic {
+      font-size: 1.2rem;
+    }
+
+    .directions {
+      display: inline-block;
+      margin-top: 15px;
+      background: #2563EB;
+      color: #ffffff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background 0.2s;
+    }
+
+    .directions:hover {
+      background: #1d4ed8;
+    }
+
+    .map-frame {
       width: 100%;
-      height: 450px;
+      height: 380px;
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 10px 25px rgba(0,0,0,0.08);
       border: 1px solid #cbd5e1;
-      margin-top: 20px;
     }
 
-    /* 7. Footer */
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      padding: 40px 0;
+    .map-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* 7. Footer Styles */
+    .foot-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.2fr;
+      gap: 40px;
+      text-align: left;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #334155;
+    }
+
+    .fbrand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .fbrand .mark {
+      width: 12px;
+      height: 12px;
+      background: #10B981;
+      border-radius: 50%;
+    }
+
+    footer h4 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    footer ul li a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    footer ul li a:hover {
+      color: #ffffff;
+    }
+
+    .foot-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 30px;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
+    /* Sticky Bar on Mobile */
+    .sticky-call {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9999;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    }
+
+    .sticky-btn {
+      flex: 1;
       text-align: center;
+      padding: 15px 0;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .wp-b {
+      background: #25D366;
+      color: white;
+    }
+
+    .call-b {
+      background: #10B981;
+      color: white;
     }
 
     @media (max-width: 768px) {
       .banner-title { font-size: 2.3rem; }
       .grid-3 { grid-template-columns: 1fr; }
+      .loc-grid { grid-template-columns: 1fr; }
+      .foot-grid { grid-template-columns: 1fr; }
+      .sticky-call { display: flex; }
+      body { padding-bottom: 60px; } /* Space for sticky bar */
     }
   </style>
 </head>
@@ -351,7 +496,7 @@
           <span class="highlight-green">स्वीकृत</span> प्रैक्टिकल ट्रेनिंग इंस्टिट्यूट
         </h1>
         <p class="banner-subtitle">
-          कंप्यूटर कोर्सेज (CCC, ADCA) से लेकर स्मार्ट AC-फ्रिज, इनवर्टर, LED रिपेयरिंग और एडवांस इलेक्ट्रॉनिक्स तक — सीखें 100% लाइव प्रैक्टिकल लैब्स में।
+          कंप्यूटर कोर्सेज (CCC, ADCA) से लेकर स्मार्ट AC-फ्रिज, इनवर्टर, LED TV रिपेयरिंग और एडवांस इलेक्ट्रॉनिक्स तक — सीखें 100% लाइव प्रैक्टिकल लैब्स में।
         </p>
         <div class="btn-group">
           <a href="tel:+916306290994" class="btn-main">🚀 सीट बुक करने के लिए कॉल करें</a>
@@ -383,42 +528,66 @@
     </div>
   </section>
 
-  <!-- 5. Live Campus Photo Gallery (स्क्रीनशॉट की फ़ाइलों के असली नामों के साथ) -->
+  <!-- 5. Live Campus Photo Gallery (सभी 48 इमेज पूरी तरह सुरक्षित और एडेड) -->
   <section id="gallery" class="section-padding" style="background-color: #f1f5f9;">
     <div class="wrap">
       <h2 class="section-title">कॉलेज कैंपस और लैब गैलरी</h2>
-      <p class="section-subtitle">हमारे आधुनिक प्रैक्टिकल क्लासरूम की वास्तविक झलकियां</p>
+      <p class="section-subtitle">हमारे आधुनिक प्रैक्टिकल क्लासरूम की वास्तविक झलकियां (48 लाइव तस्वीरें)</p>
       
       <div class="gallery-grid">
-        <!-- आपके गिटहब में मौजूद असली फ़ाइलों के नाम यहाँ जोड़ दिए गए हैं -->
-        <div class="gallery-item"><img src="DSC03373.JPG" alt="Campus Photo 1"></div>
-        <div class="gallery-item"><img src="DSC03374.JPG" alt="Campus Photo 2"></div>
-        <div class="gallery-item"><img src="DSC03375.JPG" alt="Campus Photo 3"></div>
-        <div class="gallery-item"><img src="DSC03416.JPG" alt="Campus Photo 4"></div>
-        <div class="gallery-item"><img src="DSC03417.JPG" alt="Campus Photo 5"></div>
-        <div class="gallery-item"><img src="DSC03418.JPG" alt="Campus Photo 6"></div>
-        <div class="gallery-item"><img src="DSC03419.JPG" alt="Campus Photo 7"></div>
-        <div class="gallery-item"><img src="DSC03420.JPG" alt="Campus Photo 8"></div>
-        <div class="gallery-item"><img src="DSC03421.JPG" alt="Campus Photo 9"></div>
-        <div class="gallery-item"><img src="DSC03422.JPG" alt="Campus Photo 10"></div>
-        <div class="gallery-item"><img src="DSC_8117.JPG" alt="Campus Photo 11"></div>
+        <!-- DSC03xxx सीरीज़ की JPG फ़ाइलें -->
+        <div class="gallery-item"><img src="DSC03244_1.JPG" alt="Campus Photo 1"></div>
+        <div class="gallery-item"><img src="DSC03245_1.JPG" alt="Campus Photo 2"></div>
+        <div class="gallery-item"><img src="DSC03246_1.JPG" alt="Campus Photo 3"></div>
+        <div class="gallery-item"><img src="DSC03247_1.JPG" alt="Campus Photo 4"></div>
+        <div class="gallery-item"><img src="DSC03248.JPG" alt="Campus Photo 5"></div>
+        <div class="gallery-item"><img src="DSC03249_1.JPG" alt="Campus Photo 6"></div>
+        <div class="gallery-item"><img src="DSC03250_1.JPG" alt="Campus Photo 7"></div>
+        <div class="gallery-item"><img src="DSC03363.JPG" alt="Campus Photo 8"></div>
+        <div class="gallery-item"><img src="DSC03363_1.JPG" alt="Campus Photo 9"></div>
+        <div class="gallery-item"><img src="DSC03364.JPG" alt="Campus Photo 10"></div>
+        <div class="gallery-item"><img src="DSC03367.JPG" alt="Campus Photo 11"></div>
+        <div class="gallery-item"><img src="DSC03368.JPG" alt="Campus Photo 12"></div>
+        <div class="gallery-item"><img src="DSC03368_1.JPG" alt="Campus Photo 13"></div>
+        <div class="gallery-item"><img src="DSC03372.JPG" alt="Campus Photo 14"></div>
+        <div class="gallery-item"><img src="DSC03373.JPG" alt="Campus Photo 15"></div>
+        <div class="gallery-item"><img src="DSC03374.JPG" alt="Campus Photo 16"></div>
+        <div class="gallery-item"><img src="DSC03375.JPG" alt="Campus Photo 17"></div>
+        <div class="gallery-item"><img src="DSC03416.JPG" alt="Campus Photo 18"></div>
+        <div class="gallery-item"><img src="DSC03417.JPG" alt="Campus Photo 19"></div>
+        <div class="gallery-item"><img src="DSC03418.JPG" alt="Campus Photo 20"></div>
+        <div class="gallery-item"><img src="DSC03419.JPG" alt="Campus Photo 21"></div>
+        <div class="gallery-item"><img src="DSC03420.JPG" alt="Campus Photo 22"></div>
+        <div class="gallery-item"><img src="DSC03421.JPG" alt="Campus Photo 23"></div>
+        <div class="gallery-item"><img src="DSC03422.JPG" alt="Campus Photo 24"></div>
         
-        <!-- Webp फॉर्मेट की फ़ाइलें -->
-        <div class="gallery-item"><img src="DSC_8118.webp" alt="Campus Photo 12"></div>
-        <div class="gallery-item"><img src="DSC_8119.webp" alt="Campus Photo 13"></div>
-        <div class="gallery-item"><img src="DSC_8120.webp" alt="Campus Photo 14"></div>
-        <div class="gallery-item"><img src="DSC_8135.webp" alt="Campus Photo 15"></div>
-        <div class="gallery-item"><img src="DSC_8138.webp" alt="Campus Photo 16"></div>
-        <div class="gallery-item"><img src="DSC_8139.webp" alt="Campus Photo 17"></div>
-        <div class="gallery-item"><img src="DSC_8140.webp" alt="Campus Photo 18"></div>
-        <div class="gallery-item"><img src="DSC_8141.webp" alt="Campus Photo 19"></div>
-        <div class="gallery-item"><img src="DSC_8142.webp" alt="Campus Photo 20"></div>
-        
-        <!-- अन्य मुख्य इमेज फ़ाइलें -->
-        <div class="gallery-item"><img src="DSC03244_1.JPG" alt="Campus Photo 21"></div>
-        <div class="gallery-item"><img src="DSC03245_1.JPG" alt="Campus Photo 22"></div>
-        <div class="gallery-item"><img src="DSC03246_1.JPG" alt="Campus Photo 23"></div>
-        <div class="gallery-item"><img src="DSC03247_1.JPG" alt="Campus Photo 24"></div>
+        <!-- DSC_8xxx सीरीज़ की JPG फ़ाइलें -->
+        <div class="gallery-item"><img src="DSC_8117.JPG" alt="Campus Photo 25"></div>
+        <div class="gallery-item"><img src="DSC_8123.JPG" alt="Campus Photo 26"></div>
+        <div class="gallery-item"><img src="DSC_8124.JPG" alt="Campus Photo 27"></div>
+        <div class="gallery-item"><img src="DSC_8125.JPG" alt="Campus Photo 28"></div>
+        <div class="gallery-item"><img src="DSC_8126.JPG" alt="Campus Photo 29"></div>
+        <div class="gallery-item"><img src="DSC_8130.JPG" alt="Campus Photo 30"></div>
+
+        <!-- DSC_8xxx सीरीज़ की Webp फ़ाइलें -->
+        <div class="gallery-item"><img src="DSC_8118.webp" alt="Campus Photo 31"></div>
+        <div class="gallery-item"><img src="DSC_8119.webp" alt="Campus Photo 32"></div>
+        <div class="gallery-item"><img src="DSC_8120.webp" alt="Campus Photo 33"></div>
+        <div class="gallery-item"><img src="DSC_8121.webp" alt="Campus Photo 34"></div>
+        <div class="gallery-item"><img src="DSC_8122.webp" alt="Campus Photo 35"></div>
+        <div class="gallery-item"><img src="DSC_8127.webp" alt="Campus Photo 36"></div>
+        <div class="gallery-item"><img src="DSC_8128.webp" alt="Campus Photo 37"></div>
+        <div class="gallery-item"><img src="DSC_8129.webp" alt="Campus Photo 38"></div>
+        <div class="gallery-item"><img src="DSC_8131.webp" alt="Campus Photo 39"></div>
+        <div class="gallery-item"><img src="DSC_8132.webp" alt="Campus Photo 40"></div>
+        <div class="gallery-item"><img src="DSC_8133.webp" alt="Campus Photo 41"></div>
+        <div class="gallery-item"><img src="DSC_8134.webp" alt="Campus Photo 42"></div>
+        <div class="gallery-item"><img src="DSC_8135.webp" alt="Campus Photo 43"></div>
+        <div class="gallery-item"><img src="DSC_8138.webp" alt="Campus Photo 44"></div>
+        <div class="gallery-item"><img src="DSC_8139.webp" alt="Campus Photo 45"></div>
+        <div class="gallery-item"><img src="DSC_8140.webp" alt="Campus Photo 46"></div>
+        <div class="gallery-item"><img src="DSC_8141.webp" alt="Campus Photo 47"></div>
+        <div class="gallery-item"><img src="DSC_8142.webp" alt="Campus Photo 48"></div>
       </div>
     </div>
   </section>
@@ -426,20 +595,38 @@
   <!-- 6. Google Maps Location Section -->
   <section id="location" class="section-padding">
     <div class="wrap">
-      <h2 class="section-title">गूगल मैप्स पर हमारी लोकेशन</h2>
-      <p class="section-subtitle">नीचे दिए गए लाइव मैप की मदद से आप सीधे हमारे गोरखपुर कैंपस तक पहुँच सकते हैं।</p>
+      <span class="kicker">लोकेशन व विजिट</span>
+      <h2 class="section-title" style="text-align: left;">आज ही आकर अपनी फ्री डेमो क्लास लें</h2>
+      <p style="margin-bottom: 30px;">रुस्तमपुर चौराहा, गोरखपुर — शहर के किसी भी कोने से आसानी से पहुंचने योग्य।</p>
       
-      <div class="map-container">
-        <!-- लाइव और वर्किंग गूगल मैप्स का कोड -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56983.47353912644!2d83.33719065!3d26.7916568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1m3!1s0x3991446a0c332497%3A0x94f6fdab2d040f5a!2sGorakhpur%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1716000000000!5m2!1sen!2sin" 
-          width="100%" 
-          height="100%" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div class="loc-grid">
+        <div class="loc-card">
+          <h3>कॉलेज का नया पता</h3>
+          <div class="loc-line">
+            <span class="ic">📍</span>
+            <span>पिलर नं-31, इंडियन ऑयल पेट्रोल पंप के ठीक सामने, रुस्तमपुर चौराहा, गोरखपुर, उत्तर प्रदेश - 273001</span>
+          </div>
+          <div class="loc-line">
+            <span class="ic">📞</span>
+            <span><a href="tel:+916306290994" style="color:#2563EB; font-weight:700; text-decoration:none;">+91-6306290994</a></span>
+          </div>
+          <div class="loc-line">
+            <span class="ic">🕒</span>
+            <span>ऑफिस समय: सुबह 8:00 बजे से शाम 5:00 बजे तक (रविवार बंद)</span>
+          </div>
+          <a class="directions" href="https://maps.app.goo.gl/PJdwLKXbjPG6shZZA" target="_blank" rel="noopener">🗺️ Google Maps पर रास्ता देखें (Click Here) →</a>
+        </div>
+        
+        <div class="map-frame">
+          <!-- लाइव वर्किंग गूगल मैप बिना किसी 'pb' एरर के -->
+          <iframe
+            src="https://maps.google.com/maps?q=Uma%20Technical%20College%20Gorakhpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="उमा टेक्निकल डिग्री कॉलेज लोकेशन मैप">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -447,9 +634,41 @@
   <!-- 7. Footer -->
   <footer>
     <div class="wrap">
-      <p>© 2026 उमा टेक्निकल डिग्री कॉलेज, गोरखपुर। सर्वाधिकार सुरक्षित।</p>
+      <div class="foot-grid">
+        <div>
+          <div class="fbrand"><div class="mark"></div><span>उमा टेक्निकल कॉलेज</span></div>
+          <p style="font-size:0.95rem; max-width:36ch; line-height: 1.7;">गोरखपुर का अग्रणी आत्मनिर्भर प्रशिक्षण केंद्र। हम हुनर सिखाते हैं, जो जिंदगी भर काम आता है।</p>
+        </div>
+        <div>
+          <h4>क्विक लिंक्स</h4>
+          <ul>
+            <li><a href="#courses">कंप्यूटर डिप्लोमा</a></li>
+            <li><a href="#courses">एसी-फ्रिज मैकेनिकल कोर्स</a></li>
+            <li><a href="#gallery">इवेंट गैलरी</a></li>
+            <li><a href="#location">फ्री डेमो क्लास बुक करें</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>सीधे संपर्क करें</h4>
+          <ul>
+            <li>📞 <a href="tel:+916306290994" style="color:white; font-weight:700; text-decoration:none;">+91-6306290994</a></li>
+            <li>📍 रुस्तमपुर चौराहा, पेट्रोल पंप के सामने, गोरखपुर</li>
+            <li>💬 WhatsApp: +91-6306290994</li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 उमा टेक्निकल डिग्री कॉलेज. सर्वाधिकार सुरक्षित।</span>
+        <span>ISO 9001:2015 सर्टिफाइड | NIELIT केंद्र</span>
+      </div>
     </div>
   </footer>
+
+  <!-- Modern Smart Sticky Bar for Mobile Conversion -->
+  <div class="sticky-call">
+    <a class="sticky-btn wp-b" href="https://wa.me/916306290994?text=Hi,%20I%20am%20interested%20in%20admission" target="_blank">WhatsApp करें</a>
+    <a class="sticky-btn call-b" href="tel:+916306290994">अभी कॉल करें</a>
+  </div>
 
 </body>
 </html>
