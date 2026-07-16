@@ -101,6 +101,12 @@
       align-items: center;
     }
 
+    .brand-area {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
     .brand-logo-link {
       display: block;
       text-decoration: none;
@@ -110,6 +116,20 @@
       max-height: 60px;
       width: auto;
       display: block;
+    }
+
+    .gov-logos-top {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      border-left: 1px solid #e2e8f0;
+      padding-left: 15px;
+    }
+
+    .gov-logos-top img {
+      height: 40px;
+      width: auto;
+      object-fit: contain;
     }
 
     .links a {
@@ -365,6 +385,23 @@
       font-weight: 500;
     }
 
+    .logo-container-sec {
+      margin-top: 25px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px dashed #cbd5e1;
+    }
+
+    .logo-container-sec img {
+      height: 45px;
+      width: auto;
+      object-fit: contain;
+    }
+
     .cert-list {
       display: flex;
       flex-direction: column;
@@ -609,6 +646,7 @@
       .loc-grid { grid-template-columns: 1fr; }
       .foot-grid { grid-template-columns: 1fr; }
       .sticky-call { display: flex; }
+      .gov-logos-top { display: none; } /* Mobile par top icons thin space bachane ke liye hide kiye */
       body { padding-bottom: 60px; } /* Space for sticky bar */
     }
   </style>
@@ -629,9 +667,17 @@
   <!-- 2. Header Container -->
   <header class="site">
     <div class="wrap navrow">
-      <a href="#" class="brand-logo-link">
-        <img src="logo.jpeg" alt="Logo" class="main-logo">
-      </a>
+      <div class="brand-area">
+        <a href="#" class="brand-logo-link">
+          <img src="logo.jpeg" alt="Logo" class="main-logo">
+        </a>
+        <!-- नए Logos (Top Header) -->
+        <div class="gov-logos-top">
+          <img src="images.png" alt="Gov Approval Logo">
+          <img src="nsdc-logo.png" alt="NSDC Logo">
+          <img src="skill-india-logo-png_seeklogo-480874.png" alt="Skill India Logo">
+        </div>
+      </div>
       <nav class="links">
         <a href="#courses">कोर्स लिस्ट</a>
         <a href="#offers">विशेष ऑफर</a>
@@ -667,7 +713,7 @@
   <section id="courses" class="section-padding">
     <div class="wrap">
       <h2 class="section-title">हमारे मुख्य कोर्सेज</h2>
-      <p class="section-subtitle">इंडस्ट्री डिमांड के अनुसार तैयार किए गए प्रैक्टिकल कोर्सेज</p>
+      <p class="section-subtitle">इंडस्ट्री Demand के अनुसार तैयार किए गए प्रैक्टिकल कोर्सेज</p>
       
       <div class="grid-3">
         <!-- 1 -->
@@ -832,6 +878,13 @@
               <p>द्वारा मान्यता प्राप्त</p>
             </div>
           </div>
+
+          <!-- नए Logos (Certification Section Area) -->
+          <div class="logo-container-sec">
+            <img src="images.png" alt="Gov Approved Integrated">
+            <img src="nsdc-logo.png" alt="NSDC Certified">
+            <img src="skill-india-logo-png_seeklogo-480874.png" alt="Skill India Training">
+          </div>
         </div>
 
         <div class="cert-list">
@@ -956,7 +1009,7 @@
         <div class="map-frame">
           <!-- गूगल मैप्स लाइव आईफ्रेम एम्बेड -->
           <iframe
-            src="https://www.google.com/maps/place/26%C2%B044'05.4%22N+83%C2%B021'54.1%22E/@26.7348438,83.3624415,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.7348438!4d83.3650164?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxMi4wIKXMDSoASAFQAw%3D%3D="" 
+            src="https://www.google.com/maps/place/26%C2%B044'05.4%22N+83%C2%B021'54.1%22E/@26.7348438,83.3624415,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.7348438!4d83.3650164?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxMi4wIKXMDSoASAFQAw%3D%3D" 
             loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"
             title="उमा टेक्निकल डिग्री कॉलेज लाइव मैप">
